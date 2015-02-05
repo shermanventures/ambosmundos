@@ -15,8 +15,10 @@ class JConfig {
 	var $gzip = '0';
 	var $error_reporting = '-1';
 	var $xmlrpc_server = '0';
-	var $log_path = 'C:\\wamp\\www\\ambosmundos\\logs';
-	var $tmp_path = 'C:\\wamp\\www\\ambosmundos\\tmp';
+	#var $log_path = 'C:\\wamp\\www\\ambosmundos\\logs';
+	#var $tmp_path = 'C:\\wamp\\www\\ambosmundos\\tmp';
+	var $log_path = '/var/www/ambosmundos/logs';
+	var $tmp_path = '/var/www/ambosmundos/tmp';
 	var $live_site = '';
 	var $force_ssl = '0';
 	var $offset = '0';
@@ -33,7 +35,7 @@ class JConfig {
 	var $dbtype = 'mysql';
 	var $host = 'localhost';
 	var $user = 'root';
-	var $db = 'construction';
+	var $db = 'ambosmundos';
 	var $dbprefix = 'jos_';
 	var $mailer = 'mail';
 	var $mailfrom = 'admin@rouamat.gr';
@@ -49,7 +51,7 @@ class JConfig {
 	var $MetaTitle = '1';
 	var $lifetime = '15';
 	var $session_handler = 'database';
-	var $password = '';
+	var $password = 'ChtUrXzpsJscYpDFuuWHbGPJhT3Fsp';
 	var $sitename = 'Ambos Mundos';
 	var $MetaDesc = '';
 	var $MetaKeys = '';
