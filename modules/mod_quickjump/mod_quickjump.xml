@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Quick Jump Menu</name>
+    <creationDate>02-june-2008</creationDate>
+    <author>Walid Nehme</author>
+    <copyright>(c) 2006 Walid Nehme</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>walid@nehmewalid.com</authorEmail>
+    <authorUrl>www.nehmewalid.com</authorUrl>
+    <version>3.0</version>
+    <description> This Module Creates a drop down menu listing all sub menu items from a menu. </description>
+	 
+    <files>
+        <filename module="mod_quickjump">mod_quickjump.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+	<params>
+     <param name="menu" type="mos_menu" default="mainmenu" label="Select your Menu" description="The name of the menu you wish the module to display - if no menu is selected the mainmenu is loaded" />
+
+     <param name="@spacer" type="spacer" default="" label="" description="" />
+      <param name="ordering" type="list" default="ascending" label="Sort By:" description="Sort Menu items in Drop down Menu by Ascending/Descending">
+			<option value="ascending">Ascending</option>
+			<option value="descending">Descending</option>
+	   </param> 
+	 	 <param name="startln" type="text" default="Choose Quick Jump" label="First line in drop down menu" />
+		</params>
+</install>

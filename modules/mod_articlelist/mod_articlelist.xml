@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+        <name>Article List</name> 
+ 
+    <!-- Name of the Author -->
+        <author>Malaiselvan</author> 
+ 
+    <!-- Version Date of the Module -->
+        <creationDate>01-Feb-2009</creationDate> 
+ 
+    <!-- Copyright information -->
+        <copyright>All rights reserved by www.jeema.net.</copyright> 
+ 
+    <!-- License Information -->
+        <license>GPL 2.0</license> 
+ 
+    <!-- Author's email address -->
+        <authorEmail>support@jeema.net</authorEmail> 
+ 
+    <!-- Author's website -->
+        <authorUrl>www.jeema.net</authorUrl> 
+ 
+    <!-- Module version number -->
+        <version>1.0.3</version> 
+ 
+    <!-- Description of what the module does -->
+        <description>Display list of article titles</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+        <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+                <filename module="mod_articlelist">mod_articlelist.php</filename>
+                <filename>index.html</filename>
+                <filename>helper.php</filename>
+                <filename>tmpl/default.php</filename>
+                <filename>tmpl/index.html</filename>
+        </files>
+ 
+    <languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB.mod_articlelist.ini</language>
+    </languages>
+ 
+    <!-- Optional parameters -->
+        <params>
+        <!-- parameter to allow placement of a module class suffix for the module table / xhtml display -->
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+ 
+        <!-- just gives us a little room between the previous paramter and the next -->
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+ 
+        <!-- A parameter that allows an administrator to modify the number of users that this module will display -->
+        <param name="section_id" type="text" default="" label="LABEL SECTION ID" description="DESC SECTION ID"/>
+        <param name="category_id" type="text" default="" label="LABEL CATEGORY ID" description="DESC CATEGORY ID"/>
+        <param name="no_of_items" type="text" default="10" label="LABEL NO OF ITEMS" description="DESC NO OF ITEMS"/>
+        <param name="no_of_chars" type="text" default="0" label="LABEL NO OF CHARS" description="DESC NO OF CHARS"/>
+
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+
+        <param name="order_field" type="list" default="id" label="LABEL ORDER FIELD" description="DESC ORDER FIELD">
+            <option value="cn.id">Id</option>
+            <option value="cn.title">Title</option>
+            <option value="cn.created">Created</option>
+            <option value="cn.modified">Modified</option>
+            <option value="cn.ordering">Ordering</option>
+            <option value="random">Random</option>
+        </param>
+        <param name="order_by" type="list" default="desc" label="LABEL ORDER BY" description="DESC ORDER BY">
+            <option value="asc">Asc</option>
+            <option value="desc">Desc</option>
+        </param>
+        
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        <param name="use_cache" type="list" default="N" label="LABEL USE CACHE" description="DESC USE CACHE">
+            <option value="N">No</option>
+            <option value="Y">Yes</option>
+       </param>
+
+    </params>
+</install>

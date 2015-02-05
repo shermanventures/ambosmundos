@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module">
+	<name>Interdesigns Slider</name>
+	<creationDate>05 April 2009</creationDate>
+	<author>Ahmed Kandel</author>
+	<authorEmail>ahmed.kandel@interdesigns.biz</authorEmail>
+	<authorUrl>http://interdesigns.biz</authorUrl>
+	<copyright>(C) 2009-2010 Ahmed Kandel</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+	<version>1.1.0</version>
+	<description>DESC_MODULE</description> 
+
+	<files>
+		<filename module="mod_idslider">mod_idslider.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/mod_idslider_mootools_1.11.js</filename>
+		<filename>tmpl/mod_idslider_class.noobslide.js</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_idslider.ini</language>
+	</languages>
+
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="LABEL_MODULECLASS_SFX" description="DESC_MODULECLASS_SFX" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="banners" type="text" default="" size="15" label="LABEL_BANNERS" description="DESC_BANNERS" />
+		<param name="categories" type="text" default="" size="15" label="LABEL_CATEGORIES" description="DESC_CATEGORIES" />
+		<param name="clients" type="text" default="" size="15" label="LABEL_CLIENTS" description="DESC_CLIENTS" />
+		<param name="limit" type="text" default="" size="15" label="LABEL_LIMIT" description="DESC_LIMIT" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="type" type="list" default="1" label="LABEL_TYPE" description="DESC_TYPE">
+			<option value="1">Image</option>
+			<option value="2">Custom Code</option>
+		</param>
+		<param name="ordering" type="list" default="1" label="LABEL_ORDERING" description="DESC_ORDERING">
+			<option value="1">Sticky,Ordering</option>
+			<option value="2">Sticky,Randomise</option>
+			<option value="3">Ordering Only</option>
+			<option value="4">Randomise Only</option>
+		</param>
+		<param name="window" type="radio" default="1" label="LABEL_WINDOW" description="DESC_WINDOW">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="width" type="text" default="468" size="5" label="LABEL_WIDTH" description="DESC_WIDTH" />
+		<param name="height" type="text" default="60" size="5" label="LABEL_HEIGHT" description="DESC_HEIGHT" />
+		<param name="resize" type="radio" default="1" label="LABEL_RESIZE" description="DESC_RESIZE">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="center" type="radio" default="1" label="LABEL_CENTER" description="DESC_CENTER">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="autoplay" type="radio" default="1" label="LABEL_AUTOPLAY" description="DESC_AUTOPLAY">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="start_item" type="text" default="0" size="5" label="LABEL_START_ITEM" description="DESC_STRAT_ITEM" />
+		<param name="mode" type="list" default="horizontal" label="LABEL_MODE" description="DESC_MODE">
+			<option value="horizontal">Horizontal</option>
+			<option value="vertical">Vertical</option>
+		</param>
+		<param name="mode_dir" type="list" default="left" label="LABEL_MODE_DIR" description="DESC_MODE_DIR">
+			<option value="left">Left or Top</option>
+			<option value="right">Right or Bottom</option>
+			<option value="langdir">Language Direction</option>
+		</param>
+		<param name="interval" type="text" default="5000" size="5" label="LABEL_INTERVAL" description="DESC_INTERVAL" />
+		<param name="use_transition" type="radio" default="1" label="LABEL_USE_TRANSITION" description="DESC_USE_TRANSITION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="transition" type="list" default="Bounce" label="LABEL_TRANSITION" description="DESC_TRANSITION">
+			<option value="linear">Linear</option>
+			<option value="Quad">Quadratic</option>
+			<option value="Cubic">Cubic</option>
+			<option value="Quart">Quartic</option>
+			<option value="Quint">Quintic</option>
+			<option value="Sine">Sinusoidal</option>
+			<option value="Expo">Exponential</option>
+			<option value="Circ">Circular</option>
+			<option value="Bounce">Bouncing</option>
+			<option value="Back">Back</option>
+			<option value="Elastic">Elastic</option>
+		</param>
+		<param name="transition_ease" type="list" default="easeOut" label="LABEL_TRANSITION_EASE" description="DESC_TRANSITION_EASE">
+			<option value=".easeOut">easeOut</option>
+			<option value=".easeIn">easeIn</option>
+			<option value=".easeInOut">easeInOut</option>
+		</param>
+		<param name="transition_duration" type="text" default="1000" size="5" label="LABEL_TRANSITION_DURATION" description="DESC_TRANSITION_DURATION" />
+	</params>
+	
+	<params group="advanced">
+		<param name="buttons_position" type="list" default="after" label="LABEL_BUTTONS_POSITION" description="DESC_BUTTONS_POSITION">
+			<option value="after">After</option>
+			<option value="over">Over</option>
+		</param>
+		<param name="buttons_html" type="textarea" rows="3" cols="40" default="" label="LABEL_BUTTONS_HTML" description="DESC_BUTTONS_HTML" />
+		<param name="buttons_js" type="textarea" rows="3" cols="40" default="" label="LABEL_BUTTONS_JS" description="DESC_BUTTONS_JS" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="handlers_position" type="list" default="after" label="LABEL_HANDLERS_POSITION" description="DESC_HANDLERS_POSITION">
+			<option value="after">After</option>
+			<option value="over">Over</option>
+		</param>
+		<param name="handlers_html" type="textarea" rows="3" cols="40" default="" label="LABEL_HANDLERS_HTML" description="DESC_HANDLERS_HTML" />
+		<param name="handlers_js" type="textarea" rows="3" cols="40" default="" label="LABEL_HANDLERS_JS" description="DESC_HANDLERS_JS" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="inc_mootools_js" type="radio" default="0" label="LABEL_INC_MOOTOOLS_JS" description="DESC_INC_MOOTOOLS_JS">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="track_impressions" type="radio" default="0" label="LABEL_TRACK_IMPRESSIONS" description="DESC_TRACK_IMPRESSIONS">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="cache" type="list" default="0" label="LABEL_CACHE" description="DESC_CACHE">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="LABEL_CACHE_TIME" description="DESC_CACHE_TIME" />
+	</params>
+</install>

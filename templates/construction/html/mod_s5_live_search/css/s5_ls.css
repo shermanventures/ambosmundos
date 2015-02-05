@@ -1,0 +1,56 @@
+/* S5 LIVE SEARCH
+----------------------------------------------------------- */
+
+
+#loading_img {
+	position:absolute;
+}
+
+#s5_ls_outer_wrap {
+	z-index: 3;
+	position: absolute;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3)
+	
+}
+
+.s5_ls_bar_span {
+	font-weight:normal;
+}
+
+a.s5_ls_result_link {
+	text-transform:uppercase;
+	font-weight:normal;}
+
+#s5_ls_outer_wrap h3, #s5_ls_outer_wrap a, #s5_ls_outer_wrap span, #s5_ls_outer_wrap img {
+
+	text-decoration:none;
+
+	border:none;
+}
+
+#s5_ls_outer_wrap div {
+	padding:0px;
+	margin:0px;
+	border:none;
+	width:auto;
+}
+
+.s5_ls_result1_text, .s5_ls_result2_text {
+	line-height:120% !important;
+}
+
+#s5_ls_close {
+	position:absolute;
+	cursor:pointer;
+right: 3px;
+    top: 2px;
+	background:url(../images/s5_exit.png) no-repeat !important;
+}
+
+
+.s5_ls_result1_text .readon, .s5_ls_result2_text .readon {
+	margin-bottom: 4px;
+    text-decoration: none;
+    margin-top: -5px;}

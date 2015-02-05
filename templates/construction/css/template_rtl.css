@@ -1,0 +1,188 @@
+#s5_navv li, #s5_search_wrap #mod_search_searchword, #s5_top_row1_wrap, #s5_top_row2_wrap, #s5_top_row3_wrap, #s5_center_column_wrap, #s5_left_column_wrap, #s5_right_column_wrap, #s5_bottom_row1_wrap, #s5_bottom_row2_wrap, #s5_bottom_row3_wrap, .s5_vm_name, .s5_vm_image, .s5_vm_price, .s5_vm_add_to_cart  {
+direction:rtl;
+text-align:right;
+}
+
+
+#s5_tabshow_left {direction:ltr;}
+
+#s5_nav li {
+float:right;}
+
+#s5_logo {float:right;
+background-position:top right;
+}
+
+#s5_login, #s5_register {margin-right:8px;margin-left:0px;}
+
+#s5_menu_wrap, a.readon, .contentheading {float:right;}
+
+#s5_login_icons { margin-left: 44px !important;}
+
+#s5_login_icons, #s5_banner {float: left;}
+#s5_pos_banner {float:left;}
+
+#s5_phonenumber {float: left;}
+.s5_ppebuttons { float: left;}
+.contentpaneopen_heading {
+    margin-bottom: 15px;
+    padding-right: 10px;
+	padding-left:0px;}
+
+#s5_loginreg {float: left;}
+
+#accordion_inner, #s5_pos_top_row1_1 {
+direction:ltr;
+}
+#s5_loginreg, #s5_headerright {float: left;}
+
+.jcomments-links {
+	text-align:right;
+	direction:ltr;
+	}
+
+.article_column .contentpaneopen {
+padding-right:0px;
+padding-left:15px;
+}
+
+
+#loading_img {
+visibility:hidden;
+}
+
+.latestnews li, .mostread li, .sections li, .s5_module_box ul.menu a {
+background-position:center right;
+}
+
+.jdGallery .slideInfoZone p { margin: 18px 34px !important;direction:rtl;}
+
+.slideInfoZone p { float: right;}
+.jdGallery .slideInfoZone h2 {margin: 6px 34px !important;direction:rtl;}
+.jdGallery a.left {left: 0;margin-left: 22px;}
+.jdGallery a.right {left: 23px; margin-left: 51px;}
+.s5_button_item ul {margin-right: 8px;}
+#s5_button_content div.moduletable { padding: 20px 3px;}
+#s5_search_wrap {float: left;}
+#s5_accordion_menu h3 span.s5_accordion_menu_left {margin-right: -2px;}
+	
+.s5_scrolltotop { float: left;margin-left: 44px;	}
+#s5_footer { float: left;}
+#s5_bottom_menu_wrap { float: right; margin-right: 7px;}
+
+.s5_mapdisplay, iframe {
+    margin-left: 10px;}
+.module_round_box-solidcolor h3.s5_mod_h3 {  margin-right: 15px;}
+.module_round_box-solidcolor {padding-right:4px;}
+#s5_button_content li { margin-left: -6px;}
+
+#s5_component_wrap_inner { margin-left: 5px;margin-right:0px;}
+	
+/* SPACING AND ALIGNMENT
+----------------------------------------------------------- */	
+#s5_menu_phone, #s5_logo_banner, .s5_spacerbar, #s5_breadcrumb_wrap {
+    margin-left: 44px;
+    margin-right: 44px;}
+	
+.module_round_box_outer, #s5_component_wrap {
+    margin-left: 17px;
+    margin-right: 20px;}
+	
+/* Accordion Menu
+----------------------------------------------------------- */
+
+#s5_accordion_menu h3.s5_am_parent span.s5_accordion_menu_left {
+padding-right:23px;
+}
+
+div.s5_accordion_menu_element li a {
+background:url("../images/s5_menu_arrow_subs.png") no-repeat scroll right center transparent;
+padding-right:20px;
+padding-left:0px;
+}
+
+
+/* Flex Menu
+----------------------------------------------------------- */
+
+#s5_nav, #subMenusContainer {
+direction:rtl;
+}
+
+
+.s5_sub_wrap, .s5_sub_wrap_lower {
+    padding-left: 6px;
+    padding-right: 6px;}
+
+.s5_sub_wrap_lower {
+	padding-right:6px;
+}
+
+#subMenusContainer a, #s5_nav li li a {
+	text-align:right;
+	}
+	
+.subParentBtn .S5_submenu_item a {
+background:none;
+}
+
+.s5_sub_wrap, .s5_sub_wrap_lower, .s5_sub_wrap_rtl, .s5_sub_wrap_lower_rtl {
+    margin-left: 4px;}
+
+/* End Flex Menu
+----------------------------------------------------------- */
+
+
+#login li, #form-login li {
+background-position:center right;}
+
+
+#s5box_login, #s5box_register {
+    direction:rtl;}
+
+	
+	
+	
+	
+	
+
+/* Template Specific
+----------------------------------------------------------- */
+.s5_daydate { padding-right: 9px;}
+.s5_first {  padding-right: 9px;}
+.s5_datewrapper {  float: right;margin-left: 9px;}
+.contentheading { padding-top: 4px;}
+.s5_articlespacer {display:block;}
+.product_addtocart {direction:ltr;}
+.s5_addtocartdropdown { direction: rtl;}
+
+
+
+/* Template Defaults
+----------------------------------------------------------- */
+#s5_breadcrumb_wrap {text-align: right;}
+	
+
+
+
+
+/* Jcomments
+----------------------------------------------------------- */
+#jc {padding-right:11px; }
+#jc h4 { text-align:right;}
+#comments-form, #comments-form p, #comments-report-form, #comments-report-form p, #comments-form span, #comments-form .counter {
+text-align:right;}
+#comments-form .btn, #comments-report-form .btn {
+float:right;margin-right:22px;}
+
+#jc .rbox div, #comments {
+text-align:right;
+}
+
+
+/* Tienda
+----------------------------------------------------------- */
+
+div#tienda_products div.product_thumb {
+float:none;
+}

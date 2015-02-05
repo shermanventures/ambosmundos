@@ -1,0 +1,57 @@
+#s5box_one {padding:10px; background:#fff;}
+#s5box_two {padding:10px; background:#fff;}
+#s5box_three {padding:10px; background:#fff;}
+#s5box_four{padding:10px; background:#fff;}
+#s5box_five{padding:10px; background:#fff;}
+#s5box_six{padding:10px; background:#fff;}
+#s5box_seven {padding:10px; background:#fff;}
+#s5box_eight {padding:10px; background:#fff;}
+#s5box_nine {padding:10px; background:#fff;}
+#s5box_ten {padding:10px; background:#fff;}
+
+#s5box_login {padding:10px; background:#fff;}
+#s5box_register {padding:10px; background:#fff;}
+
+
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between all ColorBox themes
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+	ColorBox example user style
+	These rules are ordered and tabbed in a way that represents the order/nesting of the generated HTML, 
+	in hope that this will make the relationship easier to understand. Thanks, jack@colorpowered.com
+*/
+#cboxOverlay{background:#000000;display:none;}
+
+#colorBox{}
+	#cboxTopLeft{width:50px; height:50px;}
+	#cboxTopCenter{height:50px;}
+	#cboxTopRight{width:50px; height:50px;}
+	#cboxBottomLeft{width:50px; height:50px;}
+	#cboxBottomCenter{height:50px;}
+	#cboxBottomRight{width:50px; height:50px;}
+	#cboxMiddleLeft{width:50px;}
+	#cboxMiddleRight{width:50px;}
+	#cboxContent{background:#fff; padding: 5px;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); }
+            #cboxLoadedContent{margin-bottom:20px;}
+            #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
+            #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
+            #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+            #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+            #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
+            #cboxLoadingOverlay{background:url(../images/loading.gif) center center no-repeat #fff;}
+            #cboxClose{position:absolute; bottom:13px; right:16px; display:block; color:#444;}

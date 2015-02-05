@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<specific>
+    <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_construction.ini</language>
+	</languages>
+	<config>
+		<fields>
+            <fieldset name="s50" label="TPL_FIELD_TS_LABEL">
+                <field name="s51spacer_notice" label="&lt;span style=&quot;display:block;&quot;&gt;Make sure to hover your mouse over each title in this column for a full description of what each field does.&lt;/span&gt;" type="spacer" />
+                
+				<field name="xml_s5_fonts_high" type="select:list" default="Open Sans Condensed" label="TPL_FIELD_SITEFONT_LABEL" description="TPL_FIELD_SITEFONT_DESC"></field>	
+				<field name="xml_s5_facebook" type="text" default="javascript:;" label="Facebook Text" description="Enter the text you desire for the Register button." />
+				<field name="xml_s5_twitter" type="text" default="javascript:;" label="Twitter URL" description="Enter the url you desire for the twitter button." />
+				<field name="xml_s5_rss" type="text" default="javascript:;" label="RSS URL" description="Enter the url you desire for the rss button." />
+				<field name="xml_s5_google" type="text" default="javascript:;" label="Google URL" description="Enter the url you desire for the google button." />
+				<field name="xml_s5_linkedin" type="text" default="javascript:;" label="Linked In URL" description="Enter the url you desire for the linked in button." />
+				<field name="xml_s5_phonenumber" type="text" default="javascript:;" label="Phone Number" description="Enter text for the phone number that you desire" />
+				
+				<field name="xml_s5_highlightcolor" type="text:6:6" default="javascript:;" label="Font Hightlight Color" description="Enter in HEX the color you desire for the highlight font color" />
+				<field name="xml_s5_colortheme" type="select:list" default="" label="Choose light or dark theme" description="Choose the overall site theme style dark or light.">
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</field>
+				
+            </fieldset>
+		</fields>
+	</config>	
+</specific>

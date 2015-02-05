@@ -1,0 +1,392 @@
+#myGallery, #myGallerySet, #flickrGallery
+{
+	position:relative;
+	z-index:0;}
+
+
+#myGallery img.thumbnail, #myGallerySet img.thumbnail
+{
+	display: none;
+}
+
+.jdGallery
+{
+	position: relative;
+	z-index:1;
+}
+
+.jdGallery img
+{
+	border: 0;
+	margin: 0;
+}
+
+.jdGallery .slideElement
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index:0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url('../images/loading-bar-black.gif');
+}
+
+.jdGallery .loadingElement
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url('../images/loading-bar-black.gif');
+}
+
+.jdGallery .slideInfoZone
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	margin: 0 0 0 11px;
+	left: 0;
+	bottom: 26px;
+	height: 80px;
+	background: transparent;
+	color: #fff;
+	text-indent: 0;
+	overflow: hidden;
+	padding-top: 19px;
+}
+
+* html .jdGallery .slideInfoZone
+{
+	bottom: -1px;
+}
+
+.jdGallery .slideInfoZone h2{
+	font-size: 15px;
+	color:#FFFFFF;
+	margin: 6px 13px;
+	color: inherit;
+	padding: 8px 12px 8px 12px;
+	font-size: 2.6em;
+	text-transform:uppercase;
+}
+
+.jdGallery .slideInfoZone p
+{
+	color:#FFFFFF;
+	margin:21px 13px;
+	padding: 10px;
+	text-shadow:1px 1px #000000;
+}
+
+.jdGallery div.carouselContainer
+{
+ bottom: -139px;
+    height: 126px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+	
+}
+
+.jdGallery a.carouselBtn
+{
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	height: 20px;
+	/*width: 100px; background: url('../images/carousel_btn.gif') no-repeat;*/
+	text-align: center;
+	padding: 0 10px;
+	font-size: 13px;
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+	z-index:0;
+	display:none;
+}
+
+.jdGallery .carousel
+{
+	position: absolute;
+	width: 100%;
+	margin: 0px;
+	left: 0;
+	top: 0;
+	height: 126px !important;
+	background: transparent;
+	color: #fff;
+	text-indent: 0;
+	overflow: hidden;
+}
+
+.jdExtCarousel
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jdGallery .carousel .carouselWrapper, .jdExtCarousel .carouselWrapper
+{
+	position: absolute;
+	width: 100%;
+	height: 110px;
+	top: 6px;
+	left: 0;
+	overflow: hidden;
+	padding-top: 4px;
+}
+
+.jdGallery .carousel .carouselInner, .jdExtCarousel .carouselInner
+{
+	position: relative;
+}
+
+.jdGallery .carousel .carouselInner .thumbnail, .jdExtCarousel .carouselInner .thumbnail
+{
+	cursor: pointer;
+	background: #000;
+	background-position: center center;
+	float: left;
+	border: 5px solid #FFFFFF;
+	-webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4); 
+	 margin-left: 2px !important;
+	 margin-right:20px;
+	
+}
+
+.jdGallery .wall .thumbnail, .jdExtCarousel .wall .thumbnail
+{
+	margin-bottom: 10px;
+}
+
+.jdGallery .carousel .label, .jdExtCarousel .label
+{
+	font-size: 13px;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+.jdGallery .carousel .wallButton, .jdExtCarousel .wallButton
+{
+	font-size: 10px;
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	padding: 1px 2px;
+	margin: 0;
+	background: #222;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+
+.jdGallery .carousel .label .number, .jdExtCarousel .label .number
+{
+	color: #b5b5b5;
+}
+
+.jdGallery a
+{
+	font-size: 100%;
+	text-decoration: none;
+	color: inherit;
+}
+
+.jdGallery a.right, .jdGallery a.left
+{
+	cursor: pointer;
+	margin-bottom: 10px;
+    height: 41px;
+    position: absolute;
+    width: 41px;
+    z-index: 2;
+	-webkit-transition: background-position 0.2s linear;
+	-moz-transition: background-position 0.2s linear;
+	-o-transition: background-position 0.2s linear;
+	transition: background-position 0.2s linear;	
+
+}
+
+
+.jdGallery a.left
+{
+	bottom: 14px;
+    margin-right: 75px;
+    right: 0;
+	background: url('../images/fleche1.png') no-repeat left top;
+}
+
+.jdGallery a.left:hover
+{
+background-position:left bottom;
+}
+
+.jdGallery a.right
+{
+	right: 23px;
+	bottom: 14px;
+	background: url('../images/fleche1.png') no-repeat right top;
+}
+
+.jdGallery a.right:hover
+{
+background-position:right bottom;
+}
+
+
+.jdGallery a.open
+{
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.withArrows a.open
+{
+	position: absolute;
+	top: 0;
+	left: 25%;
+	height: 99%;
+	width: 50%;
+	cursor: pointer;
+	z-index: 1;
+	background: none;
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+
+
+
+	
+/* Gallery Sets */
+
+.jdGallery a.gallerySelectorBtn
+{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	height: 20px;
+	/*width: 100px; background: url('../images/carousel_btn.gif') no-repeat;*/
+	text-align: center;
+	padding: 0 10px;
+	font-size: 13px;
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+	opacity: .4;
+	-moz-opacity: .4;
+	-khtml-opacity: 0.4;
+	filter:alpha(opacity=40);
+}
+
+.jdGallery .gallerySelector
+{
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+}
+
+.jdGallery .gallerySelector h2
+{
+	margin: 0;
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+}
+
+.jdGallery .gallerySelector .gallerySelectorWrapper
+{
+	overflow: hidden;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	border: 1px solid #888;
+	padding: 5px;
+	height: 40px;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.hover
+{
+	background: #333;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton div.preview
+{
+	background: #000;
+	background-position: center center;
+	float: left;
+	border: none;
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton h3
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton p.info
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #aaa;
+}
+
+
+.slideInfoZone h2 {
+	background:#c90000;
+	display:inline;}
+	
+	
+.slideInfoZone p {
+	width: 560px;
+	padding: 9px;
+	font-size: 1.4em;
+	background: #323232; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMyMzIzMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #323232 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#323232), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #323232 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #323232 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #323232 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(top, #323232 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#000000',GradientType=0 ); /* IE6-8 */}
+	
+	
+.content #myGallery {
+margin-bottom:140px;}	
